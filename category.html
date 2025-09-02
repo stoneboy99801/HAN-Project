@@ -403,9 +403,6 @@
 <a class="navbar-brand d-flex align-items-center gap-2" href="/index.html">
 <img src="logo-removebg-preview.png" alt="Clear Reflection Logo" class="logo-img">
 </a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -1522,24 +1519,42 @@
     }
   }
 
-  function filterProducts(filter, productWraps) {
-    productWraps.forEach(product => {
-      let category = product.dataset.category?.toLowerCase();
-      const material = product.dataset.material?.toLowerCase();
-      const f = filter.toLowerCase();
+function filterProducts(filter, productWraps) {
+  const sectionHeaders = document.querySelectorAll('.section-header');
+  const cardContainers = document.querySelectorAll('.card-container');
 
-      // Fix for dressing room category mismatch
-      if (category === "dressing room") {
-        category = "dressing";
-      }
+  productWraps.forEach(product => {
+    let category = product.dataset.category?.toLowerCase();
+    const material = product.dataset.material?.toLowerCase();
+    const f = filter.toLowerCase();
 
-      if (f === 'all' || category === f || material === f) {
-        product.style.display = '';
-      } else {
-        product.style.display = 'none';
-      }
-    });
-  }
+    // Fix for dressing room category mismatch
+    if (category === "dressing room") {
+      category = "dressing";
+    }
+
+    if (f === 'all' || category === f || material === f) {
+      product.style.display = '';
+    } else {
+      product.style.display = 'none';
+    }
+  });
+
+  // Section headers and containers hide/show
+  sectionHeaders.forEach((header, index) => {
+    const container = cardContainers[index];
+    const visibleProducts = container.querySelectorAll('.card-wrap:not([style*="display: none"])');
+    
+    if (visibleProducts.length === 0) {
+      header.style.display = 'none';
+      container.style.display = 'none';
+    } else {
+      header.style.display = '';
+      container.style.display = '';
+    }
+  });
+}
+
 
   function sortProducts(sortValue, productWraps) {
     const productsArray = Array.from(productWraps);
