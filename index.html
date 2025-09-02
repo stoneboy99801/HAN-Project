@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Clear Reflection</title>
+  <title>Clear Reflection | Premium Mirrors for Every Room</title>
+  <meta name="description" content="Shop premium mirrors for living rooms, bathrooms, bedrooms, and dressing spaces. Elegant designs, quick browse, and easy quotes.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg glass-nav sticky-top">
+  <nav class="navbar navbar-expand-lg glass-nav sticky-top navbar-light" aria-label="Main navigation">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="/index.html">
-        <img src="logo-removebg-preview.png" alt="" class="logo-img">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img src="logo-removebg-preview.png" alt="Clear Reflection Logo" class="logo-img">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
-          <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/About.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="/category.html">Category</a></li>
-          <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="/contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-lg-3" href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container text-center text-white">
-      <h4>Mirrors that Reflect Elegance</h4>
-      <p>Explore mirrors for living rooms, bathrooms, bedrooms, and more. Filter by room type or material to quickly
-        find exactly what you need. Download detailed specs as Word (RTF) files for each item.</p>
-      <div class="d-flex justify-content-center gap-3 mt-3">
-        <a href="/category.html" class="btn btn-light btn-lg">Browse</a>
-        <a href="/contact.html" class="btn btn-outline-light btn-lg">Get Quote</a>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container text-center text-white">
+        <h1>Mirrors that Reflect Elegance</h1>
+        <h2 class="h5 mt-2">Find your style, feel the vibe.</h2>
+        <p class="mt-2">
+          Explore mirrors for living rooms, bathrooms, bedrooms, and more. Filter by room type or material to quickly find exactly what you need. Download detailed specs as Word (RTF) files for each item.
+        </p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+          <a href="category.html" class="btn btn-light btn-lg">Browse</a>
+          <a href="contact.html" class="btn btn-outline-light btn-lg">Get Quote</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Categories -->
-  <section id="categories" class="section">
-    <h2>Mirror Categories</h2>
-    <div class="categories container">
-      <a href="/category.html" class="text-decoration-none">
-        <div class="card lift"><img src="download-1.jpg" alt="Living Room Mirror">
-          <h3>Living Room Mirror</h3>
+    <!-- Categories -->
+    <section id="categories" class="section">
+      <div class="container">
+        <h2>Mirror Categories</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <a class="card lift text-decoration-none text-center" href="category.html#living">
+              <img src="download-1.jpg" alt="Living Room wall mirror" loading="lazy">
+              <h3 class="mt-3">Living Room</h3>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a class="card lift text-decoration-none text-center" href="category.html#bathroom">
+              <img src="download-9.jpg" alt="Bathroom vanity mirror" loading="lazy">
+              <h3 class="mt-3">Bathroom</h3>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a class="card lift text-decoration-none text-center" href="category.html#dressing">
+              <img src="download-17.jpg" alt="Full-length dressing mirror" loading="lazy">
+              <h3 class="mt-3">Dressing</h3>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a class="card lift text-decoration-none text-center" href="category.html#bedroom">
+              <img src="download-25.jpg" alt="Bedroom mirror with frame" loading="lazy">
+              <h3 class="mt-3">Bedroom</h3>
+            </a>
+          </div>
         </div>
-      </a>
-      <a href="/category.html" class="text-decoration-none">
-        <div class="card lift"><img src="download-9.jpg" alt="Bathroom Mirror">
-          <h3>Bathroom Mirror</h3>
-        </div>
-      </a>
-      <a href="/category.html" class="text-decoration-none">
-        <div class="card lift"><img src="download-17.jpg" alt="Dressing Mirror">
-          <h3>Dressing Mirror</h3>
-        </div>
-      </a>
-      <a href="/category.html" class="text-decoration-none">
-        <div class="card lift"><img src="download-25.jpg" alt="Bedroom Mirror">
-          <h3>Bedroom Mirror</h3>
-        </div>
-      </a>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- Materials -->
-  <section id="materials" class="section bg-soft">
-    <h2>Mirror Materials</h2>
-    <div class="materials container">
-      <div class="mini-card">Wooden Frame</div>
-      <div class="mini-card">Acrylic Border</div>
-      <div class="mini-card">Metal Border</div>
-      <div class="mini-card">Decorative</div>
-      <div class="mini-card">LED Mirrors</div>
-      <div class="mini-card">Bluetooth Mirrors</div>
-    </div>
-  </section>
+    <!-- Materials -->
+    <section id="materials" class="section bg-soft">
+      <div class="container">
+        <h2>Mirror Materials</h2>
+        <div class="materials">
+          <div class="mini-card">Wooden Frame</div>
+          <div class="mini-card">Acrylic Border</div>
+          <div class="mini-card">Metal Border</div>
+          <div class="mini-card">Decorative</div>
+          <div class="mini-card">LED Mirrors</div>
+          <div class="mini-card">Bluetooth Mirrors</div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer Start -->
   <footer class="site-footer text-center py-3">
@@ -89,8 +101,8 @@
       <p class="mb-0 text-white">&copy; 2025 Clear Reflections | Contact: Sarkarsab99.80@gmail.com</p>
     </div>
   </footer>
-  <!-- Footer End -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
